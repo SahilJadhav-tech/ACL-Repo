@@ -194,4 +194,4 @@ test.describe('Sub Caste Master Module – Full Automation', () => {
     await expect(page.locator('#errorMsg')).toContainText('unauthorized');
   });
 
-});
+});clear
