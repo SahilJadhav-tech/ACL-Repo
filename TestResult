@@ -1,0 +1,26 @@
+# User Master - Issues Report
+
+## BUG #1: Duplicate Email Allowed (TC_009) — Severity: HIGH
+
+**Module:** User Master
+**URL:** https://acl-webpanel.dokku.accucia.co/user-page
+**Date:** 2026-03-28
+
+**Summary:** The system allows creating multiple users with the same email address. No duplicate email validation is in place.
+
+**Steps to Reproduce:**
+1. Login and navigate to Master / Users page
+2. Fill the form with valid data including email `dup_email_xxx@test.com`
+3. Submit the form — user is created successfully
+4. Navigate back to the Add User form
+5. Fill the form again with a different mobile and employee number but the same email
+6. Submit the form
+
+**Expected Result:** The system should show an error like "Email already exists" and prevent the duplicate user creation.
+
+**Actual Result:** The system shows "User has been created successfully" and creates a second user with the same email address.
+
+**Impact:**
+- Data integrity issue — multiple users can share the same email
+- Can cause problems with password reset, email notifications, and user identification
+- Duplicate mobile number and duplicate employee number are correctly validated, but email is not
