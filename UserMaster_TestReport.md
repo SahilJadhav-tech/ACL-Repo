@@ -15,13 +15,13 @@
 |--------|------------------------------------|--------|----------------------------------|
 | TC_001 | Create user with valid data        | ✅ PASS |                                  |
 | TC_002 | Same as current address checkbox   | ✅ PASS |                                  |
-| TC_003 | Create inactive user               | ✅ PASS |                                  |
+| TC_003 | Create inactive user               | ✅ PASS |                                 |
 | TC_004 | Empty form submission              | ✅ PASS | Validation errors shown          |
 | TC_005 | Invalid mobile number              | ✅ PASS | Error shown for short mobile     |
 | TC_006 | Invalid email                      | ✅ PASS | Error shown for invalid format   |
 | TC_007 | Future date validation             | ✅ PASS | Error shown for future DOJ       |
 | TC_008 | Empty full name                    | ✅ PASS | Required field error shown       |
-| TC_009 | Duplicate email                    | ❌ FAIL | **BUG: Duplicate email accepted** |
+| TC_009 | Duplicate email                   | ❌ FAIL | **BUG: Duplicate email accepted** |
 | TC_010 | Duplicate mobile                   | ✅ PASS | Duplicate mobile rejected        |
 | TC_011 | Duplicate employee number          | ✅ PASS | Duplicate emp number rejected    |
 | TC_012 | Default status is active           | ✅ PASS | Checkbox checked by default      |
