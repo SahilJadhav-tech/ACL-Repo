@@ -15,7 +15,8 @@
 |--------|------------------------------------|--------|----------------------------------|
 | TC_001 | Create user with valid data        | ✅ PASS |                                  |
 | TC_002 | Same as current address checkbox   | ✅ PASS |                                  |
-| TC_003 | Create inactive user               | ✅ PASS |                                 |
+| TC_003 | Create inactive user               | ✅ PASS |                    
+             |
 | TC_004 | Empty form submission              | ✅ PASS | Validation errors shown          |
 | TC_005 | Invalid mobile number              | ✅ PASS | Error shown for short mobile     |
 | TC_006 | Invalid email                      | ✅ PASS | Error shown for invalid format   |
